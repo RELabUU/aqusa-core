@@ -1,0 +1,85 @@
+As a RuleAuthor, I want to capture a business rule, So that I can describe the desired behavior of DUO in a specific case.
+As a RuleAuthor, I want to refer from within a business rule to another business rule, So that there is an overview of the logic of the business rules.
+As a RuleAuthor, I want to capture the sources from a business rule, So that it becomes clear where the business rule is based upon.
+As a RuleAuthor, I want to capture the validity period of the business rule, So that DUO uses up-to-date business rules.
+As a RuleAuthor, I want to have the patterns and syntax checked, So that my business rules comply with the standards.
+As a RuleAuthor, I want to have the semantics to be checked, So that I don't look like a fool.
+As a RuleAuthor, I want to have a signal if I don't use a preferred term, So that I can comply with the standards.
+As a RuleAuthor, I want to capture a decision, So that I can structure the domain in demarcated parts.
+As a RuleAuthor, I want to define a term, So that everyone involved knows the definition of the term.
+As a RuleAuthor, I want to have a warning when I define a term that overlaps with an existing term, So that misunderstandings can be avoided.
+As a RuleAuthor, I want to make relations between rulebase parts, So that all people involved know how these parts are connected.
+As a RuleAuthor, I want to capture that a rulebase part derivates a term.
+As a RuleAuthor, I want to navigate over the relations between rulebase parts, So that I can get a quick overview of the connections of the rulebase.
+As a RuleAuthor, I want to make diagrams, So that I can quickly show involved people the connection.
+As a RuleAuthor, I want to make diagrams of all rulebase parts under one decision according to a predefined pattern, So that I can quickly show involved people the connection.
+As a RuleAuthor, I want to be able to configure the patterns that are used to make figures, So that I can save time by using these patterns over again.
+As a RuleAuthor, I want to elaborate on the parts of the rulebase, So that execution knowledge is understandable for the people involved.
+As a RuleAuthor, I want to document design decisions, So that all people involved can discover which choices have been made and why.
+As a RuleAuthor, I want to have the history of a rulebase part to be changed when I change something in the rulebase part, So that my colleague RuleAuthors can see that something has changed.
+As a RuleAuthor, I want to consolidate the history of a rulebase part, So that I can see when and by whom a rulebase part is altered.
+As a RuleAuthor, I want to search the whole rulebase, So that I can see for myself or someone else what is inside the rulebase.
+As a RuleAuthor, I want to be able to see a list per rulebase part, So that I can navigate quickly through the rulebase.
+As a RuleAuthor, I want to be able to configure the list of a rulebase part, So that the lists are aligned with my preferences.
+As a RuleAuthor, I want to filter the list per rulebase with a new or existing filter, So that I can quickly find what I am looking for.
+As a RuleAuthor, I want to export or print a selection of parts from the rulebase, So that the people involved are quickly and properly informed.
+As a RuleAuthor, I want to generate a review report, So that my colleague authors can perform a peer review.
+As a RuleAuthor, I want to generate a verification report, So that my colleague authors can perform a verification.
+As a RuleAuthor, I want to generate a validation report, So that my colleague authors can perform a validation.
+As a RuleAuthor, I want to have a list of terms in the rule design, So that everyone involved can see all the used term and their definitions.
+As a RuleAuthor, I want to deliver rulebase parts, So that clients can implement these.
+As a RuleAuthor, I want to set the status of a rulebase part, So that everyone involved knows what the status is of individual rulebase parts in the change process.
+As a RuleAuthor, I want to generate a packing list with every new version, So that everyone involved knows what has been implemented in the new version.
+As a RuleAuthor, I want to have a variance analysis, So that I can see what has changed in a rulebase part.
+As a RuleAuthor, I want to monitor issues, So that I can efficiently use my time.
+As a RuleAuthor, I want to overlook changes in the rulebase per session, So that I can save or rollback individual changes.
+As a RuleAuthor, I want to checkout a selection of rulebase parts, So that I can work solely without crossing the work of my colleague authors.
+As a RuleAuthor, I want to reuse rulebase parts from other projects, So that I save time.
+As a RuleAuthor, I want to have a precise search and replace, So that I can fix unintentional changes.
+As a RuleAuthor, I want to have an autosave function, So that I can't accidentally lose my work.
+As a terminator, I want to capture all the definitions of the nouns in the rulebase, So that authors of rules and everyone else involved know the definition of the noun.
+As a terminator, I want to capture preferred terms and undesired terms.
+As a terminator, I want to monitor the use of undesired and preferred terms, So that everyone involved follows the preferred terms.
+As a terminator, I want to have a list per period, So that I can see which term in that period have been changed or added or removed.
+As a terminator, I want to be able to see which rulebase parts derived from terms.
+As a terminator, I want to be able to see where a term is used in the rulebase, So that I can assess the impact of a change.
+As a terminator, I want to show the connection between terms and the object model, So that the project can avoid misunderstandings.
+As a terminator, I want to document a term, So that everyone involved knows in retrospect why the term is defined this way.
+As a terminator, I want to capture the source of a term, So that I can refer to definitions from authorities in the domain.
+As a terminator, I want to have an autosave function, So that I can't accidentally lose my work.
+As a RuleAnalyst, I want to structure the rulebase, So that there are workable units in the development and production phase.
+As a RuleAnalyst, I want to have a decision model, So that I have an overview of the knowledge domain.
+As a RuleAnalyst, I want to have an overview of all relevant sources, So that I can scope the project.
+As a RuleAnalyst, I want to connect the rules to the relevant sources, So that I can check the completeness of the rulebase.
+As a RuleAnalyst, I want to have a verification report, So that I can improve the quality of the rulebase quickly.
+As a RuleAnalyst, I want to have an overview of all rulebase parts that have been reused, So that I can see what the external dependencies are.
+As a RuleAnalyst, I want to relate decisions and business processes, So that I can monitor the coherence with the business architecture.
+As a RuleAnalyst, I want to have an impact report, So that I can estimate the impact of a future change.
+As a RuleAnalyst, I want to see per business rule in what form and how much of it has been implemented, So that is in known what is implemented from the rulebase.
+As a RuleAnalyst, I want to capture and manage the patterns and syntax of business rules, So that the quality of the business rules is more easily guaranteed.
+As a RuleAnalyst, I want to have a period report, So that I can show clients what has changes in the last period.
+As a RuleAnalyst, I want to determine the versioning rules of the version management, So that everyone involved follows these rules. 
+As a RuleAnalyst, I want to configure what is shown in a rule design, So that everyone involved gets a similar picture.
+As a RuleAnalyst, I want to offer rulebase parts to other project for reuse, So that my organization saves time.
+As a RuleAnalyst, I want to manage the meta-model, So that coherence between rulebase parts is preserved.
+As a RuleAnalyst, I want to add rulebase parts, So that I can model additional domains.
+As a RuleAnalyst, I want to enforce the notation of source references, So that this data stays usable.
+As a RuleAnalyst, I want to have an autosave function, So that I can't accidentally lose my work.
+As an administrator, I want to define the access rights of users, So that there are no accidental or unauthorized changes in the rulebase.
+As an administrator, I want to configure the available functionality per user, So that a user gets precisely the functionality he or she needs.
+As an administrator, I want to change or remove the check-out of a user, So that there are no delays when the author of the rule is absent.
+As an administrator, I want to update the BRM tool, So that users experience the least possible inconvenience.
+As an administrator, I want to have extensive logging, So that I can easily and quickly reproduce errors.
+As an administrator, I want to add a field to a rulebase part, So that the rulebase part better fits the needs for information from the users and clients.
+As an administrator, I want to define the patterns to which a field must conform, So that the quality of the data in the rulebase is secured.
+As an administrator, I want to configure which fields must be filled at what stage, So that authors of rules don't forget to fill in details.
+As an administrator, I want to backup and restore the rulebase, So that DUO doesn't lose production knowledge.
+As an administrator, I want to be able to migrate the rulebase to another product, So that DUO prevents a vendor lock-in.
+As an administrator, I want to export rulebase parts to standard formats, So that information exchange with other systems can happen.
+As an administrator, I want to have support for the SSO tool, So that I don't have to spend time on managing log-in data.
+As an administrator, I want to have a control on the referential integrity of the rulebase, So that I can locate corrupt data.
+As an administrator, I want to have a connection with Jira, So that bugs can be easily be connected to business rules.
+As an administrator, I want to have a connection with MagicDraw, So that implementation details can easily be connected to business rules.
+As an administrator, I want to manage the format and layout of reports, So that the technical details are my responsibility. 
+As an administrator, I want to separate projects, So that people cannot traverse each others work.
+As an administrator, I want to have branching and merging, So that I can easily make releases from the rulebase.

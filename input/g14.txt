@@ -1,0 +1,67 @@
+As a Publisher, I want to publish a dataset, so that I can view just the dataset with a few people.
+As a Publisher, I want to publish a dataset, so that I can share the dataset publicly with everyone.
+As a Publisher, I want to sign up for an account, so that I can publish my data package to the registry and to have a publisher account to publish my data package under.
+As a Visitor, I want to sign up via github or google, so that I don't have to enter lots of information and remember my password for yet another website.
+As a Publisher, I want to know what do next after signing up, so that I can get going quickly.
+As an Admin, I want to invite someone to join the platform, so that they can start contributing or using data.
+As a Publisher, I want to import my data package into the registry, so that my data has a permanent online home to access. 
+As a Publisher, I want to configure my client, so that I can start publishing data packages.
+As a Publisher, I want to use a publish command to update a data package that is already in the registry, so that it appears there.
+As a Publisher, I want to unpublish a data package, so that it is no longer visible to anyone.
+As a Publisher, I want to permanently delete a data package, so that it no longer takes up storage space.
+As a Publisher, I want to validate the data I am about to publish to the registry, so that I publish good data and know that I am doing.
+As a Publisher, I want to data to be validated when I publish it, so that I know immediately if I have accidentally broken my data or have bugs and can take action to correct.
+As a Consumer, I want to know that the data I am downloading is good and can be relied on, so that I don't have to check it myself or run into annoying bugs later on.
+As a Publisher, I want to publish a data package where its resource data is stored on my servers but the registry caches a copy of that data, so that if my data is lost or gets broken I still have a copy people can use.
+As a Consumer, I want to be able to get the data for a data package even if the original data has been moved or removed, so that I can still use is and my app or analysis keeps working.
+As a Publisher, I want to publish a data package in the UI, so that it is available and published.
+As a Publisher, I want to create a data package in the UI so that it is available and published.
+As a Publisher, I want to be able to restore the deleted data package via cli, so that it is back visible and available to view, download.
+As a Publisher, I want to undelete the deleted data packages, so that the deleted data packages is now visible again.
+As a Publisher, I want to be able to preview the views of the current data package using cli prior to publishing, so that I can refine the json declarations of datapackage view section to achieve a great looking result.
+As a Consumer, I want to view a data package online, so that I can get a sense of whether this is the dataset I want.
+As a publisher, I want to show the world how my published data is, so that it immediately catches consumer's attention. 
+As a consumer, I want to view the data package, so that I can get a sense of whether I want this dataset or not.
+As a Publisher, I want to preview a datapackage I have prepared, so that I can check it works and share the results.
+As a Consumer, I want to see how much the data has been downloaded, so that I can choose most popular in the case when there are several alternatives for my use case.
+As a Publisher, I want to see real examples of published packages so that I can understand how useful and simple the datapackage format and the registry is.
+As a Consumer, I want to see some example data packages quickly, so that I get a sense of what is on this site and if it is useful to look further.
+As a Consumer, I want to search data packages, so that I can find the ones I want.
+As a Consumer, I want to search based on description of data package, so that I can find package which related to some key words.
+As a Consumer, I want to download the data package in one file, so that I don't have to download descriptor and each resource by hand.
+As a Developer, I want to use data package as a node lib in my project, so that I can depend on it using my normal dependency framework.
+As a Consumer, I want to load a Data Package from R, so that I can immediately start playing with it.
+As a Data Analyst I want to download a data package, so that I can study it and wrangle with it to infer new data or generate new insights.
+As a Data Analyst, I want to update previously downloaded data package, so that I can work with the most recent data.
+As a Consumer, I want to download a DataPackage's data one coherent SQLite database, so that I can get it easily in one form.
+As a Data Analyst, I want to compare different versions of some datapackage locally, so that I can see schema changes clearly and adjust my analytics code to the desired schema version.
+As a Web Developer, I want to be able to install multiple versions of the same datapackage separately, so that all my projects could be developed independently and deployed locally.
+As a Developer, I want to list all DataPackages requirements for my project in the file and pin the exact versions of any DataPackage that my project depends on, so that the project can be deterministically deployed locally and won't break because of the DataPackage schema changes. 
+As a Publisher, I want to tag datapackage to create a snapshot of data on the registry server, so that consumers can refer to it.
+As a Publisher, I want to be warned that a tag exists when I try to overwrite it, so that I don't accidentally overwrite stable tagged data which is relied on by consumers.
+As a Publisher, I want to be able to overwrite the previously tagged datapackage, so that I can fix it if I mess up.
+As a Publisher, I want to version my Data Package and keep multiple versions around including older versions, so that I do not break consumer systems when I change my datapackage.
+As a Publisher, I want to be able to get access to a previous version I tagged, so that I can return to it and review it. 
+As a Consumer, I want to know full details of how the data package schema has changed, so that I can adjust my scripts to handle it.
+As a Consumer, I want to get a sense of the age of the datapackage that I have downloaded before, so that I can decide if I should update or not.
+As a Consumer, I want to view a Datapackage at a particular version online, so that I can present/discuss the particular data timeslice of interest with other people.
+As a Consumer, I want to download a Data package at a particular version, so that I know it is compatible with my scripts and system.
+As a Consumer, I want to be notified of changes to a package I care about, so that I can check out what has changed and take action.
+As a Consumer, I want to see how active the site is, so that I can decide if I should get involved.
+As a Consumer, I want to browse and find publishers, so that I can find interesting publishers and their packages.
+As a Consumer, I want to see a publisher's profile, so that I can discover their packages and get a sense of how active and good they are.
+As a Consumer, I want to view a publisher's profile, so that I can see who is behind a particular package or to see what other packages they produce. 
+As a Consumer, I want to search among all data packages owned by a publisher, so that I can easily find one data package amongst all the data packages by this publisher.
+As an Owner, I want to edit my profile, so that it is updated with new information.
+As an Owner, I want to invite an existing user, so that the user can become a member of my publisher.
+As an owner, I want to invite someone using their email to sign up and become a member of my Publisher, so that they are authorized to publish data packages under my Publisher.
+As an owner, I want to remove someone from membership in my publisher, so that they no longer have ability to publish or modify my data packages.
+As an owner, I want to view all the people in my organization and what roles they have, so that I can change these if I want.
+As an owner, I want to make a user an owner, so that they have full control.
+As an owner, I want to remove a user as an owner, so that they are just a member and no longer have full control.
+As an Admin, I want to set key configuration parameters for my site deployment, so that I can change key information like the site title.
+As an Admin, I want to see key metrics about usage such as users, API usage, downloads, so that I know how things are going.
+As an Admin, I want to have a pricing plan and billing system, so that I can charge users and make my platform sustainable.
+As a Publisher, I want to know if this site has a pricing plan and what the prices are, so that I can work out what this will cost me in the future and have a sense that these guys are sustainable. 
+As a Publisher, I want to sign up for a given pricing plan, so that I am entitled to what it allows.
+As a Publisher, I want to have private data packages, so that I can share just with my team.
