@@ -18,4 +18,5 @@ A command line version of the AQUSA tool<sup>1</sup>, which identifies quality d
 
 ### References and links
 <sup>1</sup> https://github.com/gglucass/AQUSA
+
 <sup>2</sup> Garm Lucassen, Fabiano Dalpiaz, Jan Martijn E. M. van der Werf, Sjaak Brinkkemper. Improving Agile Requirements: the Quality User Story Framework and Tool, In Requirements Engineering, volume 21, 2016.
