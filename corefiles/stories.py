@@ -12,10 +12,10 @@ class Stories:
 	def __init__(self, project):
 		self.project = project
 		self.stories = []
-	
+
 	def add_story(self, story):
 		self.stories.append(story)
-		
+
 	def has_story(self, other_story):
 		if len(self.stories) == 0:
 			return False
@@ -31,11 +31,11 @@ class Story:
 		self.role = ""
 		self.means = ""
 		self.ends = ""
-		
+
 	def chunk(self):
 		StoryChunker.chunk_on_indicators(self)
 		return self
-		
+
 	def equals_to(self, another):
 		self_role = self.role[len(extract_indicator_phrases(self.role, 'role')):]
 		another_role = another.role[len(extract_indicator_phrases(another.role, 'role')):]
@@ -44,8 +44,8 @@ class Story:
 		if self_role == another_role and self_means == another_means:
 			return True
 		return False
-		
-	
+
+
 class StoryChunker:
   def chunk_story(story):
     if story.means is None:
@@ -58,6 +58,7 @@ class StoryChunker:
     return story.role, story.means, story.ends
 
   def chunk_on_indicators(story):
+    from corefiles.analyzer import Analyzer
     indicators = StoryChunker.detect_indicators(story)
     if indicators['means'] is not None and indicators['ends'] is not None:
       indicators = StoryChunker.correct_erroneous_indicators(story, indicators)
@@ -86,7 +87,7 @@ class StoryChunker:
   def detect_all_indicators(story):
     indicators = {'role': [], "means": [], 'ends': []}
     for indicator in indicators:
-      for indicator_phrase in eval(indicator.upper() + '_INDICATORS'):  
+      for indicator_phrase in eval(indicator.upper() + '_INDICATORS'):
         if story.title:
           for indicator_match in re.compile('(%s)' % indicator_phrase.lower()).finditer(story.title.lower()):
             indicators[indicator] += [indicator_match.span()]
@@ -127,7 +128,7 @@ class StoryChunker:
       if type(leaf) is not tuple:
         if leaf[0][0] == 'I':
           break
-        elif leaf.label() == 'NP': 
+        elif leaf.label() == 'NP':
           return_string.append(leaf[0][0])
         else:
           break
@@ -135,6 +136,7 @@ class StoryChunker:
     return ' '.join(return_string)
 
   def means_tags_present(story, string):
+    from corefiles.analyzer import Analyzer
     if not Analyzer.well_formed_content_rule(string, 'means', ['MEANS']):
       story.means = string
     return story

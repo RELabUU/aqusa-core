@@ -31,7 +31,7 @@ class Analyzer:
 
   def atomic_rule(chunk, kind):
     sentences_invalid = []
-    if chunk: 
+    if chunk:
       for x in CONJUNCTIONS:
         if x in chunk.lower():
           if kind == 'means':
@@ -81,7 +81,7 @@ class Analyzer:
     for word in word_array:
       if not wordnet.synsets(word): result = True
     return result
-    
+
 
   def identical_rule(story, allStories):
     if allStories.has_story(story):
@@ -120,7 +120,7 @@ class Analyzer:
     if len(chunks) == 1: result = True
     for x in range(0,len(chunks)):
       if edit_distance(chunks[x].lower(), project_format[x].lower()) > 3:
-        result = True 
+        result = True
     return result
 
   def well_formed_content_highlight(story_part, kind):
@@ -138,7 +138,7 @@ class Analyzer:
   def replace_tag_of_special_words(sentence):
     index = 0
     for word in sentence:
-      if word[0] in SPECIAL_WORDS:  
+      if word[0] in SPECIAL_WORDS:
         lst = list(sentence[index])
         lst[1] = SPECIAL_WORDS[word[0]]
         sentence[index] = tuple(lst)
@@ -152,7 +152,7 @@ class Analyzer:
         indicator_words = nltk.word_tokenize(indicator)
         pos_text = [x for x in pos_text if x[0] not in indicator_words]
     return pos_text
-	
+
   def get_common_format(all_stories):
     most_common_format = []
     for chunk in ['role', 'means', 'ends']:
@@ -165,7 +165,7 @@ class Analyzer:
       all_stories.format = ', '.join(most_common_format)
     if all_stories.format == "": all_stories.format = "As a, I want to, So that"
     return all_stories
-	
+
 class MinimalAnalyzer:
   def minimal(story):
     MinimalAnalyzer.punctuation(story)
@@ -214,6 +214,7 @@ class MinimalAnalyzer:
     return highlighted_text
 
   def indicator_repetition(story):
+    from corefiles.stories import StoryChunker
     indicators = StoryChunker.detect_all_indicators(story)
     for indicator in indicators: indicators[indicator] = StoryChunker.remove_overlapping_tuples(indicators[indicator])
     indicators = MinimalAnalyzer.remove_indicator_repetition_exceptions(indicators, story)
@@ -222,13 +223,13 @@ class MinimalAnalyzer:
         highlight = MinimalAnalyzer.indicator_repetition_highlight(story.title, indicators[indicator], 'high')
         add_defect(str(story.id), 'minimal', 'indicator_repetition', highlight, story.title)
     return story
-  
+
   def indicator_repetition_highlight(text, ranges, severity):
     indices = []
     for rang in ranges:
       indices += [[rang[0], text[ rang[0]:rang[1] ] ]]
     return Analyzer.highlight_text_with_indices(text, indices, severity)
-  
+
   def remove_indicator_repetition_exceptions(indicators, story):
     # exception #1: means indicator after ends indicator
     for means_indicator in indicators['means']:
