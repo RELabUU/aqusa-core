@@ -1,0 +1,3 @@
+As a system user i want to alert imminent bookings so that offerer and asker know that a booking is going to start 
+As a system user i want to validate payed bookings started from some time so that users can rate each others(and offerers can be payed)
+As a registered user i want to be able to request a new password so that i can login again if i forget it
